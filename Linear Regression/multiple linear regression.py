@@ -59,7 +59,7 @@ Y_pred = linreg.predict(X_test)
 print (Y_pred)
 print (type(Y_pred))
 
-#计算Sales预测的RMSE  
+#RMSE  
 print (type(Y_pred),type(Y_test))  
 print (len(Y_pred),len(Y_test))  
 print (Y_pred.shape,Y_test.shape)  
