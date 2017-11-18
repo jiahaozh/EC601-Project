@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-#优点：快速；没有调节参数；可轻易解释；可理解。
-#缺点：相比其他复杂一些的模型，其预测准确率不是太高，因为它假设特征和响应之间存在确定的线性关系，这种假设对于非线性的关系，线性回归模型显然不能很好的对这种数据建模。
+#Pros: fast;no adjusting parameters;understanable
+#Cons: accuracy is not high compared to other complex models. Since it assumes that there is linear relationship between inputs
+#and outputs, linear regression model can not bulid model for those nonlinear relstionship.
 """
 Created on Sat Nov 18 10:59:45 2017
 
@@ -35,7 +36,7 @@ Y = data['Sales']
 # print the first 5 values  
 print (Y.head())
 
-from sklearn.model_selection import train_test_split  #这里是引用了交叉验证  
+from sklearn.model_selection import train_test_split    
 X_train,X_test, Y_train, Y_test = train_test_split(X, Y, random_state=1) 
 #default split is 75% for training and 25% for testing
 print (X_train.shape)  
@@ -76,7 +77,7 @@ print("Coefficient of determination R-squred is:%.3f" % linreg.score(X_test,Y_te
 plt.figure()  
 plt.plot(range(len(Y_pred)),Y_pred,'r',label="predict")  
 plt.plot(range(len(Y_pred)),Y_test,'b',label="test")  
-plt.legend(loc="upper right") #显示图中的标签  
+plt.legend(loc="upper right")  
 plt.xlabel("the number of sales")  
 plt.ylabel('value of sales')  
 plt.show()  
