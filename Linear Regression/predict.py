@@ -9,7 +9,7 @@ Created on Sat Nov 18 10:31:24 2017
 import matplotlib.pyplot as plt  
 import pandas as pd  
 from sklearn import linear_model
-from sklearn.model_selection import train_test_split  #这里是引用了交叉验证  
+from sklearn.model_selection import train_test_split    
 
 # Function to get data  
 def get_data(file_name):  
