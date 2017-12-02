@@ -14,18 +14,18 @@ import numpy as np
 
 import pandas as pd
 
-df = pd.read_csv('nike.csv', usecols=['close', 'open', 'high', 'low','score'])
+df = pd.read_csv('nike.csv', usecols=['close', 'open', 'high', 'low','DJI','GSPC','IXIC','score'])
 
-validate_df = pd.read_csv('Validate.csv', usecols=['open', 'high', 'low','score', 'close'])
-validate_x = validate_df[['open', 'high', 'low','score']]
+validate_df = pd.read_csv('Validate.csv', usecols=['open', 'high', 'low','score', 'close','DJI','GSPC','IXIC'])
+validate_x = validate_df[['open', 'high', 'low','score','DJI','GSPC','IXIC']]
 validate_y = validate_df['close']
 
-train_x, test_x, train_y, test_y = train_test_split(df[['open', 'high', 'low','score']], df['close'], train_size=0.75)
+train_x, test_x, train_y, test_y = train_test_split(df[['open', 'high', 'low','score','DJI','GSPC','IXIC']], df['close'], train_size=0.75)
 
 clf = RandomForestRegressor()
 clf.fit(train_x, train_y)
 
-predictions = clf.predict(validate_df[['open', 'high', 'low','score']])
+predictions = clf.predict(validate_df[['open', 'high', 'low','score','DJI','GSPC','IXIC']])
 
 #print("Train Accuracy :: ", accuracy_score(train_y, clf.predict(train_x)))
 #print("Test Accuracy  :: ", accuracy_score(test_y, predictions))
