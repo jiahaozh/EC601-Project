@@ -174,7 +174,7 @@ for i in score:
 
 import matplotlib.pyplot as plt   
 from sklearn import linear_model
-from sklearn.model_selection import train_test_split  #这里是引用了交叉验证  
+from sklearn.model_selection import train_test_split  #here we used cross validation  
 
 # Function to get data  
 def get_data(file_name):  
@@ -214,7 +214,7 @@ def show_linear_line(X_parameters,Y_parameters):
  plt.xlabel('Sentiment Score')
  plt.ylabel('Next-day stock price change(%)')
  plt.grid(True)
- plt.legend(loc="upper left") #显示图中的标签
+ plt.legend(loc="upper left") 
  plt.xticks([-20,-10,0,10,20,30,40,50,60])  
  plt.yticks= np.linspace(-5, 5, 11) 
  plt.show()
@@ -223,7 +223,7 @@ def show_linear_line(X_parameters,Y_parameters):
  plt.figure()  
  plt.plot(range(len(Y_test)),regr.predict(X_test),'r',label="predict")  
  plt.plot(range(len(Y_test)),Y_test,'b',label="test")
- plt.legend(loc="upper left") #显示图中的标签
+ plt.legend(loc="upper left") 
  plt.xlabel("The number of data")  
  plt.ylabel('Next-day stock price change(%)')   
 
