@@ -85,7 +85,6 @@ print(b)
 #for i in range(5):
 #    y3[i]=x3[i]*beta+alpha
 #plt.plot(x3,y3,'g-')
-#残差预测值,模型的残差是训练样本点与线性回归模型的纵向距离
 #yr=model.predict(x1)
 #for i,j in enumerate(x1):
  #   plt.plot([j,j],[y1[i],y2[i]],'r-')
