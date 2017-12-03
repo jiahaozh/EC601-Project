@@ -4,6 +4,7 @@
 Created on Sat Nov 18 16:04:18 2017
 
 @author: abhivora
+@author: fengjun li
 """
 
 import pandas as pd
@@ -165,8 +166,19 @@ def remove_values_from_list(the_list, val):
 remove_values_from_list(score, 100000)
 
 
+
 print(score)
 
+sentiment_score=[]
+for i in score:
+    sentiment_score.append([i])
+print(sentiment_score)
+
+#output CSV file
+df = pd.DataFrame(score)
+df.columns = ['score']
+#df.index = ['seq1']
+df.to_csv("firstone.csv", )
 
 
  
