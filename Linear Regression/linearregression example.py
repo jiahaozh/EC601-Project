@@ -89,7 +89,7 @@ print(b)
 #for i,j in enumerate(x1):
  #   plt.plot([j,j],[y1[i],y2[i]],'r-')
  
-#残差平方和
+
 #print("SSres is %.2f" % np.mean((model.predict(x1)-y1)**2))
 
 #variance = np.var(x1)
