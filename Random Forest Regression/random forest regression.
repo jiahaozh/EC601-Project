@@ -43,5 +43,5 @@ print(clf.score(validate_x, validate_y))
 
 predicted_values = clf.predict(validate_x)
 validate_df['predicted_close'] = predicted_values
-validate_df.to_csv('Output.csv', index=False)
+validate_df.to_csv('Output.csv', index=False) #THIS WILL SEND THE PREDICTION AS WELL AS THE ACTUAL PRICE into a csv FILE.
 
