@@ -15,8 +15,8 @@ import pandas as pd
 
 df = pd.read_csv('nike.csv', usecols=['close', 'open', 'high', 'low','DJI','GSPC','IXIC','score'])  #THIS WILL READ DATA FROM THE CSV FILE
 
-validate_df = pd.read_csv('Validate.csv', usecols=['open', 'high', 'low','score', 'close','DJI','GSPC','IXIC'])
-validate_x = validate_df[['open', 'high', 'low','score','DJI','GSPC','IXIC']]
+validate_df = pd.read_csv('Validate.csv', usecols=['open', 'high', 'low','score', 'close','DJI','GSPC','IXIC'])#VALIDATE.csv FILE IS USED TO INPUT THE LATEST FEATURES TO GET A PREDICTION.
+validate_x = validate_df[['open', 'high', 'low','score','DJI','GSPC','IXIC']] #THIS IS THE TRAINING FEATURES
 validate_y = validate_df['close']
 
 train_x, test_x, train_y, test_y = train_test_split(df[['open', 'high', 'low','score','DJI','GSPC','IXIC']], df['close'], train_size=0.75)
