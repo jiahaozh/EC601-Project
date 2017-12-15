@@ -1,4 +1,4 @@
-# EC601-Project
+# EC601-Project : STOCK PREDICTOR BASED ON NEWS SENTIMENT AND PAST TREND OF STOCK
 **_Team Member: Jiahao Zhang, Fengjun Li, Hongtao Zhao, Abhi Vora_** <br> 
 ---
 In this project, our purpose is to establish a individual stock management system. Its main function is to predict next-day stock price based on today's New's Articles.  <br>This is our website: https://hongtaoz.wixsite.com/stock .
