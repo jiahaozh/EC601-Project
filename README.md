@@ -17,6 +17,9 @@ In this project, our purpose is to establish a individual stock management syste
 - Database: MYSQL
 ### Algorithms:
 Linear Regression model is the first machine learning model we used to train the dataset, and we used two features (daily news sentiment score and past daily close stock price percentage changes).However, the relationship is weak so that it cannot reflect the stock price trend well. To modify that, we changed to Random Forest Regression model and  we added more features (high price, low price, open price, Dow Jones index, S&P 500 index and NASDAQ index). Fortunately, it showed a much better relationship.
+### Poster:
+![image](https://github.com/jiahaozh/EC601-Project/raw/master/poster.png)
+
 
 
 
