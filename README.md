@@ -30,7 +30,7 @@ This is autotest from http://www.webpagetest.org/result/171215_RG_ca0cbadba7137b
 ![image](https://github.com/jiahaozh/EC601-Project/raw/master/TEST/webpagetest3.png)
 ![image](https://github.com/jiahaozh/EC601-Project/raw/master/TEST/webpagetest4.png)
 ![image](https://github.com/jiahaozh/EC601-Project/raw/master/TEST/webpagetest5.png)
-And the test document is Test_Case_WebUI document.
+And the test document is Test_Case_WebUI.xlsx document.
 
 
 
