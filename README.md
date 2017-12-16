@@ -25,6 +25,17 @@ This is autotest from https://monkeytest.it/test/d30533c9-d051-4664-bb93-5465001
 ![image](https://github.com/jiahaozh/EC601-Project/raw/master/TEST/monkeytest2.png)
 ![image](https://github.com/jiahaozh/EC601-Project/raw/master/TEST/monkeytest3.png)
 This is autotest from http://www.webpagetest.org/result/171215_RG_ca0cbadba7137b7eb608ca968baaae52/
+![image](https://github.com/jiahaozh/EC601-Project/raw/master/TEST/webpagetest1.png)
+![image](https://github.com/jiahaozh/EC601-Project/raw/master/TEST/webpagetest2.png)
+![image](https://github.com/jiahaozh/EC601-Project/raw/master/TEST/webpagetest3.png)
+![image](https://github.com/jiahaozh/EC601-Project/raw/master/TEST/webpagetest4.png)
+![image](https://github.com/jiahaozh/EC601-Project/raw/master/TEST/webpagetest5.png)
+And the test document is Test_Case_WebUI document.
+
+
+
+
+
 
 
 
